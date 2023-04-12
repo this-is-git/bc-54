@@ -8,18 +8,38 @@
   --silver-color: #f5f5f5;
 }
 
-.link {
-  color: inherit;
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-.list {
+ul,
+ol {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.button {
+img {
+  display: block;
+}
+
+button {
   cursor: pointer;
   font: inherit;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 body {
@@ -28,16 +48,29 @@ body {
   line-height: calc(30 / 20);
 }
 
+.container {
+  max-width: 1378px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .title {
   font-weight: 600;
   font-size: 48px;
   color: var(--black-color);
+  margin-bottom: 60px;
 }
 
 .logo {
   font-weight: 400;
   font-size: 36px;
   color: var(--black-color);
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 55px;
 }
 
 .logo-decor {
@@ -53,31 +86,44 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  border: 2px solid var(--min-title-color);
+  border-radius: 10px;
+  padding: 19px 54px;
+  min-width: 312px;
 }
 
 /* HERO */
-.titles {
-  color: red;
+
+.hero {
+  padding-top: 101px;
 }
 
-a:hover {
-  color: green;
-}
-a:focus {
-  color: rgb(0, 109, 128);
-}
-a:active {
-  color: yellow;
+.hero-content {
+  max-width: 540px;
 }
 .hero-title {
   font-weight: 600;
   font-size: 64px;
   line-height: calc(80 / 64);
   color: var(--black-color);
+  max-width: 386px;
+  margin-bottom: 40px;
 }
 
 .hero-text {
   font-size: 24px;
+  margin-bottom: 60px;
+  color: #8f95a5;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px,
+    rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px,
+    rgb(0, 0, 0) -0.832294px 1.81859px 0px,
+    rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97998px 0.28224px 0px,
+    rgb(0, 0, 0) -1.87291px -0.701566px 0px,
+    rgb(0, 0, 0) -1.30729px -1.5136px 0px,
+    rgb(0, 0, 0) -0.421592px -1.95506px 0px,
+    rgb(0, 0, 0) 0.567324px -1.91785px 0px,
+    rgb(0, 0, 0) 1.41734px -1.41108px 0px,
+    rgb(0, 0, 0) 1.92034px -0.558831px 0px;
 }
 
 .hero-button {
@@ -86,9 +132,16 @@ a:active {
   letter-spacing: 0.03em;
   color: var(--white-color);
   background-color: var(--min-title-color);
+  border: 1px solid var(--black-color);
+  border-radius: 10px;
+  padding: 22px 105px;
 }
 
 /* Skills */
+
+.skills {
+  padding-top: 134px;
+}
 
 .skills-list__title {
   font-weight: 600;
@@ -98,10 +151,20 @@ a:active {
 
 .skills-list__item {
   background-color: var(--silver-color);
+  padding: 32px 18px;
+}
+
+.skills-list__item:not(:last-child) > .skills-list__img {
+  margin-bottom: 24px;
+}
+
+.skills-list__title {
+  margin-bottom: 20px;
 }
 
 .skills-list__text {
   font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .skills-list__btn {
@@ -109,21 +172,41 @@ a:active {
   font-size: 18px;
   color: var(--white-color);
   background-color: var(--min-title-color);
+  padding: 15px 52px;
+  border-radius: 10px;
 }
 
 /* ABOUT */
 
+.about {
+  padding-top: 178px;
+}
+
+.about-content {
+  max-width: 652px;
+}
+
 .about-text {
   line-height: calc(36 / 20);
+  margin-bottom: 30px;
 }
 
 .about-number {
   font-weight: 600;
   font-size: 48px;
   color: #2a3246;
+  margin-bottom: 8px;
 }
 
 /* PRICING */
+
+.pricing {
+  padding-top: 182px;
+}
+
+.pricing-img {
+  margin-bottom: 31px;
+}
 
 .pricing-subtitle {
   font-weight: 600;
@@ -131,10 +214,17 @@ a:active {
   line-height: calc(48 / 30);
   text-transform: capitalize;
   color: var(--min-title-color);
+  margin-bottom: 20px;
+}
+
+.pricing-text {
+  margin-bottom: 30px;
 }
 
 .pricing-bottom {
   background-color: #eeeeee;
+  padding: 5px 23px;
+  max-width: 260px;
 }
 
 .pricing-cost {
@@ -147,9 +237,32 @@ a:active {
   color: #546269;
 }
 
+/* COTACT */
+
+.contact {
+  padding-top: 180px;
+}
+
+.contact-descr {
+  max-width: 654px;
+  margin-bottom: 30px;
+}
+
 /* FOOTER */
+
+.footer {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: #fd0a0a5f;
+}
+
+.footer-wrapper {
+  border-top: 1px solid #c4c4c4;
+}
 
 .footer-link {
   font-size: 24px;
   letter-spacing: 0.02em;
+  padding: 31px 0;
+  display: block;
 }
