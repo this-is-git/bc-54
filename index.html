@@ -18,22 +18,22 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <!-- <header class="header">
+      <div class="container header-wrapper">
         <a class="logo link" href="">Brit<span class="logo-decor">lex</span></a>
         <nav class="header-nav">
-          <ul class="header-menu list">
+          <ul class="header-menu">
             <li class="menu-item">
-              <a class="menu-link link" href="">Home</a>
+              <a class="menu-link" href="">Home</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">Skills</a>
+              <a class="menu-link" href="">Skills</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">About Us</a>
+              <a class="menu-link" href="">About Us</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link link" href="">Pricing</a>
+              <a class="menu-link" href="">Pricing</a>
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="">Contacts</a>
@@ -45,7 +45,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-wrapper">
           <div class="hero-content">
             <h1 class="hero-title titles">Learn Any&nbspForeign Language</h1>
             <p class="hero-text">
@@ -67,7 +67,7 @@
       <section class="skills">
         <div class="container">
           <h2 class="skills-title title">Skills</h2>
-          <ul class="skills-list list">
+          <ul class="skills-list">
             <li class="skills-list__item">
               <img
                 class="skills-list__img"
@@ -98,7 +98,11 @@
                 alt="writing car"
               />
               <h3 class="skills-list__title">Writing</h3>
-              <p class="skills-list__text"></p>
+              <p class="skills-list__text">
+                One of the most important and extensive areas of natural
+                science, the science that studies substances, also their
+                composition
+              </p>
               <button class="skills-list__btn button" type="button">
                 Learn more
               </button>
@@ -126,20 +130,22 @@
                 width="408"
                 alt="listening lesson"
               />
-              <h3 class="skills-list__title">Listening</h3>
-              <p class="skills-list__text">
-                Here you can find activities to practise your listening skills.
-                Listening will help you to improve your understanding
-              </p>
-              <button class="skills-list__btn button" type="button">
-                Learn more
-              </button>
+              <div class="skils-list__wrapper">
+                <h3 class="skills-list__title">Listening</h3>
+                <p class="skills-list__text">
+                  Here you can find activities to practise your listening
+                  skills. Listening will help you to improve your understanding
+                </p>
+                <button class="skills-list__btn button" type="button">
+                  Learn more
+                </button>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="about">
-        <div class="container">
+        <div class="container about-wrapper">
           <div class="about-content">
             <h2 class="about-title title">About Us</h2>
             <p class="about-text">
@@ -227,23 +233,26 @@
       </section>
     </main>
     <section class="contact">
-      <div class="container">
+      <div class="container contact-wrapper">
         <img
           src="./image/contact.png"
           width="425"
           alt="sends a paper airplane"
         />
-        <h2 class="contact-title title">Contact Us</h2>
-        <p class="contact-descr">
-          Discover your current English level by taking our free online English
-          test. Sign up to our newsletter for learning tips and free resources
-        </p>
+        <div class="contact-content">
+          <h2 class="contact-title title">Contact Us</h2>
+          <p class="contact-descr">
+            Discover your current English level by taking our free online
+            English test. Sign up to our newsletter for learning tips and free
+            resources
+          </p>
+        </div>
       </div>
     </section>
     <footer class="footer">
       <div class="container footer-wrapper">
         <a class="logo link" href="">Brit<span class="logo-decor">lex</span></a>
-        <ul class="footer-list list">
+        <ul class="footer-list">
           <li class="footer-item">
             <a
               class="footer-link"
@@ -273,6 +282,22 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
+    <div class="container">
+      <div class="flex-wrap">
+        <div class="flex-elem">1</div>
+        <div class="flex-elem">2</div>
+        <div class="flex-elem">3</div>
+        <div class="flex-elem">4</div>
+        <div class="flex-elem">5</div>
+        <div class="flex-elem">6</div>
+        <div class="flex-elem">7</div>
+        <div class="flex-elem">8</div>
+        <div class="flex-elem">9</div>
+        <div class="flex-elem">10</div>
+        <div class="flex-elem">11</div>
+        <div class="flex-elem">12</div>
+      </div>
+    </div>
   </body>
 </html>

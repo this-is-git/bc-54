@@ -65,6 +65,7 @@ body {
   font-weight: 400;
   font-size: 36px;
   color: var(--black-color);
+  margin-right: auto;
 }
 
 /* HEADER */
@@ -73,8 +74,25 @@ body {
   padding-top: 55px;
 }
 
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  margin-right: 121px;
+}
+
 .logo-decor {
   color: var(--logo-decor-color);
+}
+
+.header-menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-link {
@@ -96,6 +114,12 @@ body {
 
 .hero {
   padding-top: 101px;
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .hero-content {
@@ -143,6 +167,30 @@ body {
   padding-top: 134px;
 }
 
+.skills-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-list__item:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.skills-list__item:last-child {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.skils-list__wrapper {
+  max-width: 324px;
+}
+
 .skills-list__title {
   font-weight: 600;
   font-size: 30px;
@@ -182,8 +230,24 @@ body {
   padding-top: 178px;
 }
 
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
 .about-content {
   max-width: 652px;
+  margin-right: auto;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.about-list__item {
+  max-width: 113px;
 }
 
 .about-text {
@@ -202,6 +266,18 @@ body {
 
 .pricing {
   padding-top: 182px;
+}
+
+.pricing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.pricing-item {
+  width: calc((100% - 2 * 30px) / 3);
+  display: flex;
+  flex-direction: column;
 }
 
 .pricing-img {
@@ -225,6 +301,10 @@ body {
   background-color: #eeeeee;
   padding: 5px 23px;
   max-width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: auto;
 }
 
 .pricing-cost {
@@ -243,6 +323,16 @@ body {
   padding-top: 180px;
 }
 
+.contact-wrapper {
+  display: flex;
+  gap: 0 144px;
+  align-items: flex-start;
+}
+
+.contact-content {
+  max-width: 767px;
+}
+
 .contact-descr {
   max-width: 654px;
   margin-bottom: 30px;
@@ -253,11 +343,20 @@ body {
 .footer {
   padding-top: 55px;
   padding-bottom: 55px;
-  background-color: #fd0a0a5f;
 }
 
 .footer-wrapper {
   border-top: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+}
+
+.footer-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.footer-list {
+  display: flex;
 }
 
 .footer-link {
@@ -265,4 +364,21 @@ body {
   letter-spacing: 0.02em;
   padding: 31px 0;
   display: block;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.flex-elem {
+  background-color: #c80a0a;
+  width: calc((100% - 6 * 15px) / 3);
+  height: 200px;
+  margin: 15px;
+}
+
+.flex-elem:nth-child(even) {
+  background-color: #0ac82d;
 }
