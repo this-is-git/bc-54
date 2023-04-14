@@ -355,6 +355,36 @@ body {
   margin-right: 80px;
 }
 
+.social-list {
+  display: flex;
+  gap: 15px;
+  margin-right: 50px;
+}
+
+.social-link {
+  width: 25px;
+  height: 25px;
+  background-color: #108de0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  fill: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #c1e010;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: #000;
+}
+
 .footer-list {
   display: flex;
 }
@@ -381,4 +411,19 @@ body {
 
 .flex-elem:nth-child(even) {
   background-color: #0ac82d;
+}
+
+.bg {
+  padding: 188px 0;
+  max-width: 1440px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../image/ofice.jpg");
+  background-color: #c6c6c6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
