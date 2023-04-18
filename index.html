@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <svg class="icon" width="20" height="20">
+    <svg class="icon" width="20" height="20">
       <use href="./image/symbol-defs.svg#"></use>
     </svg>
     <header class="header">
@@ -43,7 +43,9 @@
             </li>
           </ul>
         </nav>
-        <button class="header-button button" type="button">Let’s Talk</button>
+        <button class="header-button button" type="button" data-modal-open>
+          Let’s Talk
+        </button>
       </div>
     </header>
     <main>
@@ -339,8 +341,15 @@
           </li>
         </ul>
       </div>
-    </footer> -->
-    <section class="ovrley">
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal" type="button" data-modal-close>
+          close
+        </button>
+      </div>
+    </div>
+    <!-- <section class="ovrley">
       <div class="container">
         <ul class="over-list">
           <li>
@@ -381,7 +390,8 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="bg"></section> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
